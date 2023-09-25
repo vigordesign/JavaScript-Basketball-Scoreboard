@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'cursed_timer_ulilregular';
+    src: url('./fonts/cursedtimerulil-aznm-webfont.woff2') format('woff2'),
+         url('./fonts/cursedtimerulil-aznm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    /* background-color: #000; */
+    background: rgb(2,64,27);
+    background: linear-gradient(0deg, rgba(2,64,27,1) 0%, rgba(0,0,0,1) 71%);
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 21px;
+}
+
+#homeScoreBox, #guestScoreBox {
+    width: 155px;
+    height: 120px;
+    background-color: #02401b;
+    border: solid 1px #02401b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+    box-sizing: border-box;
+}
+
+.homeScore , .guestScore {
+    font-size: 90px;
+    color: #fff;
+}
+
+.homeScore p, .guestScore p {
+    margin: 0px;
+    /* padding-top: 13px; */
+    font-family: 'cursed_timer_ulilregular';
+}
+
+.btnBox {
+    padding-top: 26px;
+    font-family: 'cursed_timer_ulilregular';
+    
+}
+
+.btnBox button {
+    width: 45px;
+    height: 45px;
+    /* background: none; */
+    background-color: #02401b;
+    border: solid #fff .5px;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+.utilities {
+    text-align: center;
+    margin: 25px auto;
+    width: 60%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+
+.utilities button {
+    background-color: #000;
+    border: solid #02401b 1px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 25px;
+    font-weight: inherit;
+}
+
+#marquee {
+    background-color: #02401b;
+    font-size: 24px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 1px 0px 20px -3px rgba(0,0,0,0.64);
+    -moz-box-shadow: inset 1px 0px 20px -3px rgba(0,0,0,0.64);
+    box-shadow: inset 1px 0px 20px -3px rgba(0,0,0,0.64);
+    overflow: hidden;
+}
+
+#marquee p {
+    white-space: nowrap;
+}
+
+#scrollHype {
+    animation: marquee-scroll 5s linear infinite;
+
+}
+
+@keyframes marquee-scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% { 
+      transform: translateX(-100%);
+    }
+  }
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+    .utilities {
+        width: 80%;
+    }
+}

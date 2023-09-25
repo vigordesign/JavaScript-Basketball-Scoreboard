@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div id="homeScoreBox">
+                    <div class="homeScore">
+                        <p id="homeScr">00</p>
+                    </div>
+                </div>
+                <div class="btnBox">
+                    <button onclick="addOneHome()">+1</button>
+                    <button onclick="addTwoHome()">+2</button>
+                    <button onclick="addThreeHome()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div id="guestScoreBox">
+                    <div class="guestScore">
+                        <p id="guestScr">00</p>
+                    </div>
+                </div>
+                <div class="btnBox">
+                    <button onclick="addOneGuest()">+1</button>
+                    <button onclick="addTwoGuest()">+2</button>
+                    <button onclick="addThreeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="utilities">
+            <div id="marquee">
+                <div id="scrollHype">
+                    <p id="marqueeText">Get ready for a great game!</p>
+                </div>
+            </div>
+            <button onclick="newGame()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

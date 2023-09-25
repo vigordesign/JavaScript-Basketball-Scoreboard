@@ -9,19 +9,35 @@
 
 body {
     margin: 0;
-    /* background-color: #000; */
     background: rgb(2,64,27);
     background: linear-gradient(0deg, rgba(2,64,27,1) 0%, rgba(0,0,0,1) 71%);
     color: #fff;
     width: 80%;
+    max-width: 566px;
     margin: 0 auto;
-    max-width: 80%;
+    min-width: 340px;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
+}
+
+/* .column1 {
+    margin-right: 25px;
+} */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    padding-top: 27px;
+    opacity: 90%;
 }
 
 h3 {
@@ -73,9 +89,10 @@ h3 {
 .utilities {
     text-align: center;
     margin: 25px auto;
-    width: 60%;
+    width: 100%;
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
+    min-width: 340px;
 }
 
 .utilities button {
@@ -118,8 +135,8 @@ h3 {
 
 /* MOBILE */
 
-@media only screen and (max-width: 600px) {
-    .utilities {
-        width: 80%;
+@media only screen and (max-width: 680px) {
+    .logo {
+        display: none;
     }
 }
